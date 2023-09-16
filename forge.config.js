@@ -11,6 +11,7 @@ module.exports = {
       ".vscode",
       ".github",
     ],
+    name: "Bitsy"
   },
   rebuildConfig: {},
   makers: [

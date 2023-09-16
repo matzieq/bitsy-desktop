@@ -1,7 +1,7 @@
 {
   "name": "bitsy-desktop",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Electron wrapper for bitsy editor",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
@@ -9,8 +9,8 @@
     "make": "electron-forge make"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "matzieq",
+  "license": "MIT",
   "devDependencies": {
     "@electron-forge/cli": "^6.4.2",
     "@electron-forge/maker-deb": "^6.4.2",
