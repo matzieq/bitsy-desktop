@@ -1,4 +1,13 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, MenuItem, Menu } = require("electron");
+/**
+ * @type {MenuItem[]}
+ */
+const tpl = [
+  {
+    label: "Bitsy",
+    submenu: [{ role: "about" }, { type: "separator" }, { role: "quit" }],
+  },
+];
 
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -12,4 +21,7 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow();
+
+  const menu = Menu.buildFromTemplate(tpl);
+  Menu.setApplicationMenu(menu);
 });
