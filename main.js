@@ -6,7 +6,8 @@ const createWindow = () => {
     height: 720,
   });
 
-  win.loadFile("editor/index.html");
+  win.loadFile("bitsy/editor/index.html");
+  win.maximize();
 };
 
 app.whenReady().then(() => {

@@ -1,9 +1,16 @@
 module.exports = {
   packagerConfig: {
     asar: true,
-    icon: "editor/icons/bitsy",
+    icon: "bitsy/editor/icons/bitsy",
     // ignore: path => path.includes("docs") && !path.includes("editor"),
-    ignore: ["docs/node_modules", "doccx"],
+    ignore: [
+      "bitsy/docs",
+      "bitsy/classic",
+      "bitsy/dev",
+      "bitsy/experiments",
+      ".vscode",
+      ".github",
+    ],
   },
   rebuildConfig: {},
   makers: [
